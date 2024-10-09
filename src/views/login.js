@@ -31,23 +31,23 @@ export default function Login() {
         div className = "container" >
         <
         h1 > Connexion < /h1> {
-            error && < p className = "text-danger" > { error } < /p>} <
-                form onSubmit = { handleSubmit } >
-                <
-                input type = "email"
-            name = "email"
-            placeholder = "Email"
-            onChange = { handleChange }
-            required / >
-                <
-                input type = "password"
-            name = "password"
-            placeholder = "Mot de passe"
-            onChange = { handleChange }
-            required / >
-                <
-                button type = "submit" > Se connecter < /button> <
-                /form> <
-                /div>
-        );
-    }
+        error && < p className = "text-danger" > { error } < /p>} <
+        form onSubmit = { handleSubmit } >
+        <
+        input type = "email"
+        name = "email"
+        placeholder = "Email"
+        onChange = { handleChange }
+        required / >
+        <
+        input type = "password"
+        name = "password"
+        placeholder = "Mot de passe"
+        onChange = { handleChange }
+        required / >
+        <
+        button type = "submit" > Se connecter < /button> < /
+        form > <
+        /div>
+    );
+}

@@ -29,30 +29,31 @@ export default function Posts() {
     }, [search, limit, sortBy, order, skip]);
 
     return ( <
-        div className = "container" >
-        <
-        h1 > Mes Posts < /h1> {
+            div className = "container" >
+            <
+            h1 > Mes Posts < /h1> {
             error && < p className = "text-danger" > { error } < /p>} <
-                input
-            type = "text"
+            input type = "text"
             placeholder = "Recherche"
             value = { search }
             onChange = {
-                (e) => setSearch(e.target.value) }
+                (e) => setSearch(e.target.value)
+            }
             /> <
             button onClick = {
-                    () => setSkip(skip + limit) } > Charger plus < /button> {
-                    loading ? ( <
-                        p > Chargement... < /p>
-                    ) : ( <
-                        ul > {
-                            posts.map((post) => ( <
-                                li key = { post.id } > { post.title } < /li>
-                            ))
-                        } <
-                        /ul>
-                    )
+                () => setSkip(skip + limit)
+            } > Charger plus < /button> {
+            loading ? ( <
+                p > Chargement... < /p>
+            ) : ( <
+                ul > {
+                    posts.map((post) => ( <
+                        li key = { post.id } > { post.title } < /li>
+                    ))
                 } <
-                /div>
-        );
-    }
+                /ul>
+            )
+        } <
+        /div>
+);
+}

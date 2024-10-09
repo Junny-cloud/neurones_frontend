@@ -43,27 +43,27 @@ export default function CreatePost() {
         div className = "container" >
         <
         h1 > Créer un Post < /h1> {
-            error && < p className = "text-danger" > { error } < /p>} <
-                form onSubmit = { handleSubmit } >
-                <
-                input type = "text"
-            name = "title"
-            placeholder = "Titre"
-            onChange = { handleChange }
-            required / >
-                <
-                textarea name = "content"
-            placeholder = "Contenu"
-            onChange = { handleChange }
-            required / >
-                <
-                input type = "file"
-            name = "image_file"
-            onChange = { handleFileChange }
-            /> <
-            button type = "submit" > Créer < /button> <
-                /form> <
-                /div> <
-                />
-        );
-    }
+        error && < p className = "text-danger" > { error } < /p>} <
+        form onSubmit = { handleSubmit } >
+        <
+        input type = "text"
+        name = "title"
+        placeholder = "Titre"
+        onChange = { handleChange }
+        required / >
+        <
+        textarea name = "content"
+        placeholder = "Contenu"
+        onChange = { handleChange }
+        required / >
+        <
+        input type = "file"
+        name = "image_file"
+        onChange = { handleFileChange }
+        /> <
+        button type = "submit" > Créer < /button> < /
+        form > <
+        /div> < /
+        >
+    );
+}

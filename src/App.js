@@ -23,8 +23,8 @@ function App() {
         />  <
         Route path = "/posts/create"
         element = { < CreatePost / > }
-        />  <
-        /Routes> <
+        />  < /
+        Routes > <
         /Router>
     );
 }
